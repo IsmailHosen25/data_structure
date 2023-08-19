@@ -61,55 +61,69 @@
 
 
 #6
-class Node:
-    def __init__(self,value):
-       self.data=value
-       self.next=None
-class SLL:
-    def __init__(self,):
-         self.head=None
-    def add_data(self,value):
-        new_node=Node(value)
-        if(self.head==None):
-            self.head=new_node
-        else:
-            cur=self.head
-            while cur!=None:
-                if(cur.next==None):
-                    cur.next=new_node
-                    break
-                else:
-                    cur=cur.next
-    def sll_print(self):
-        print("",end="Head -> ")     
-        ssll_r_print(self.head)
-        print("None")
-    def delete_k(self,k):
-        if(self.head.data==k):
-            self.head=self.head.next
-        else:
-            delete_k_nodes(self.head,k)
-def ssll_r_print(s):
-    if(s==None):
-        return 
-    print(s.data,end="->")
-    return ssll_r_print(s.next)
-def delete_k_nodes(s,k,nk=None):
-    n=s
-    if(s.data==k):
-        nk.next=s.next
-        return
-    if(s.data!=k):
-        if(s.next==None):
-            print("Not found")
-        else:
-            delete_k_nodes(s.next,k,n)
+# class Node:
+#     def __init__(self,value):
+#        self.data=value
+#        self.next=None
+# class SLL:
+#     def __init__(self,):
+#          self.head=None
+#     def add_data(self,value):
+#         new_node=Node(value)
+#         if(self.head==None):
+#             self.head=new_node
+#         else:
+#             cur=self.head
+#             while cur!=None:
+#                 if(cur.next==None):
+#                     cur.next=new_node
+#                     break
+#                 else:
+#                     cur=cur.next
+#     def sll_print(self):
+#         print("",end="Head -> ")     
+#         ssll_r_print(self.head)
+#         print("None")
+#     def delete_k(self,k):
+#         if(self.head.data==k):
+#             self.head=self.head.next
+#         else:
+#             delete_k_nodes(self.head,k)
+# def ssll_r_print(s):
+#     if(s==None):
+#         return 
+#     print(s.data,end="->")
+#     return ssll_r_print(s.next)
+# def delete_k_nodes(s,k,nk=None):
+#     n=s
+#     if(s.data==k):
+#         nk.next=s.next
+#         return
+#     if(s.data!=k):
+#         if(s.next==None):
+#             print("Not found")
+#         else:
+#             delete_k_nodes(s.next,k,n)
 
-h=SLL()
-h.add_data(1)
-h.add_data(2)
-h.add_data(3)
-h.add_data(4)
-h.add_data(5)
-h.sll_print()
-h.alt_node()
+# h=SLL()
+# h.add_data(1)
+# h.add_data(2)
+# h.add_data(3)
+# h.add_data(4)
+# h.add_data(5)
+# h.sll_print()
+# h.alt_node()
+
+# def recursion(n):
+#   if n > 0:
+#     print(n - 1, end = ' ')
+#     recursion(n - 1)
+#     recursion(n - 2)
+# recursion(4)
+# def factorial(n):
+#     if(n<=1):
+#         return 
+#     factorial(n-2)
+#     factorial(n-1)
+#     print(n,end=" ")
+# factorial(5)
