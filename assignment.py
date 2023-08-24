@@ -126,14 +126,14 @@ class BST:
 #         cur=cur.left
 #     print(f"The predecessor of {n} is {predecessor} and the successor is {successor}.")
 
-s=BST()
-s.insert(7)
-s.insert(4)
-s.insert(8)
-s.insert(6)
-s.insert(3)
-s.insert(5)
-numOfDescendants(s.root)
+# s=BST()
+# s.insert(7)
+# s.insert(4)
+# s.insert(8)
+# s.insert(6)
+# s.insert(3)
+# s.insert(5)
+# numOfDescendants(s.root)
 #Q5
 # def countLeftNodes(root):
 #     cur=root
