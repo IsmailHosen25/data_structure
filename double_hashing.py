@@ -33,6 +33,7 @@ class Hashtable:
          while self.table[hashvalue]!=None:
               if(self.table[hashvalue]==value):
                    self.table[hashvalue]=None
+                   self.size-=1
                    return
               hashvalue=(hashvalue+sechashvalue)%self.capacity
     def rehash(self):
