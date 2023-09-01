@@ -54,7 +54,7 @@ class BST:
         self.minBst(root.left)
 
 
-    #Q5
+    ##Q5
     # def searchR(self,root,data):
     #     if(root.data==data):
     #         return True
@@ -92,4 +92,4 @@ inorder(s.root)
 print()
 s.maxBst(s.root)
 s.minBst(s.root)
-s.searchR(s.root,l[3])
+# s.searchR(s.root,l[3])
