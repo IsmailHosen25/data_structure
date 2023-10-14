@@ -1,10 +1,10 @@
 class HashTable:
-    def __init__(self,capacity=7):
+    def __init__(self,capacity=11):
         self.capacity=capacity
         self.table=[None]*capacity
         self.size=0
     def hashFunction(self,value):
-        return abs(value)%self.capacity
+        return value//self.capacity
     def insert(self,value):
             loadfactor=self.size/self.capacity
             if(loadfactor>0.6):
@@ -54,18 +54,12 @@ class HashTable:
         for value in self.table:
             print(value)
 h=HashTable()
-h.insert(18)
-h.insert(3)
-h.insert(38)
-h.insert(7)
+h.insert(70)
+h.insert(31)
+h.insert(58)
 h.insert(8)
-h.insert(9)
-h.insert(89)
-h.insert(73)
-h.printhash()
-print()
-print()
-h.delete(18)
-h.delete(50)
-h.delete(8)
+h.insert(102)
+h.insert(68)
+h.insert(25)
+
 h.printhash()

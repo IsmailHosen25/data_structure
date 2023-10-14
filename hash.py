@@ -12,7 +12,7 @@ class Hashtable:
             self.rehash()
         hashvalue=self.hashfunction(value)
         while self.table[hashvalue] !=None:
-            hashvalue=(hashvalue+1)
+            hashvalue=(hashvalue+1)%self.capacity
         self.table[hashvalue]=value
         self.size+=1
     def delete(self, value):
@@ -22,7 +22,7 @@ class Hashtable:
             if(self.table[hash_value]==value):
                self.table[hash_value]=None
                return
-            hash_value=(hash_value+1)
+            hash_value=(hash_value+1)%self.capacity
     def find(self,value):
         hash_value = self.hashfunction(value)
         if(self.table[hash_value]==value):
@@ -30,7 +30,7 @@ class Hashtable:
         while self.table[hash_value]!=None:
             if(self.table[hash_value]==value):
                return True
-            hash_value=(hash_value+1)
+            hash_value=(hash_value+1)%self.capacity
         return False
     def rehash(self):
         newcapcity=self.capacity*2
@@ -40,7 +40,7 @@ class Hashtable:
             if(value !=None):
                 newHasvalue=self.hashfunction(value)
                 while newtable[newHasvalue] !=None:
-                    newHasvalue=(newHasvalue+1)
+                    newHasvalue=(newHasvalue+1)%self.capacity
                 newtable[newHasvalue]=value
         self.table=newtable
     def printvalue(self):
