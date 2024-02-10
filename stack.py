@@ -26,19 +26,19 @@ class Stack:
         return self.arr
 
 ##### Q-1
-# str_input=input()
-# def reverseString(str):
-#   helperStack = Stack()
-#   for i in range(len(str)):
-#     helperStack.push(str[i])
-#   rev=''
-#   while helperStack.is_empty() !=True:
-#     char=helperStack.peek()
-#     rev+=char
-#     helperStack.pop()
-#   return rev
-# a= 'hello how are you doing'
-# print(reverseString(str_input))
+str_input=input()
+def reverseString(str):
+  helperStack = Stack()
+  for i in range(len(str)):
+    helperStack.push(str[i])
+  rev=''
+  while helperStack.is_empty() !=True:
+    char=helperStack.peek()
+    rev+=char
+    helperStack.pop()
+  return rev
+a= 'hello how are you doing'
+print(reverseString(str_input))
 
 ########### Q-2
 

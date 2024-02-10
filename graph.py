@@ -82,6 +82,7 @@ h.addedge('E','E')
 h.addedge('E','D')
 h.addedge('D','C')
 h.printgraph()
+
 print()
 print()
 h.printoutdegree()

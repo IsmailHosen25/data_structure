@@ -61,5 +61,4 @@ h.insert(8)
 h.insert(102)
 h.insert(68)
 h.insert(25)
-
 h.printhash()
